@@ -168,7 +168,7 @@ h1 { font-size: 6.8535260698em; margin-bottom: 1em; }
 
 h2 { font-size: 4.235801032em; }
 
-h3 { font-size: 2.617924em; }
+h3 { font-size: 2.617924em; line-height: 1em; }
 
 article, section { font-size: 1.618em; line-height: 1.618em; margin-bottom: 2.617924em; }
 
@@ -177,8 +177,11 @@ article, section { font-size: 1.618em; line-height: 1.618em; margin-bottom: 2.61
 .container .writing { float: left; display: block; margin-right: 2.3576515979%; width: 100%; }
 .container .writing:last-child { margin-right: 0; }
 
+@media all and (max-width: 900px) { body { font-size: 12px; } }
+@media all and (max-width: 480px) { body { font-size: 10px; } }
 .article-title { height: 100vh; width: 100vw; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-align-items: center; -ms-flex-align: center; align-items: center; color: #fafafa; background-image: url("../img/article-br.jpg"); background-size: cover; background-attachment: fixed; text-align: center; }
 .article-title h1 { margin: 0; }
+.article-title .meta { padding: 0; }
 .article-title .meta li { display: inline; font-style: italic; color: #c7c7c7; }
 
 .writing .half-size-img img { max-width: 50%; }
@@ -187,3 +190,4 @@ article, section { font-size: 1.618em; line-height: 1.618em; margin-bottom: 2.61
 .writing cite:before { content: "\2014 \2009"; }
 .writing blockquote { font-style: italic; padding-left: 1em; }
 .writing blockquote:before { display: block; content: "\201C"; color: #656565; position: relative; left: -12%; top: .5em; padding: 0; font-size: 6.8535260698em; }
+@media all and (max-width: 700px) { .writing blockquote:before { left: -.6em; } }

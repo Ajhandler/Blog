@@ -2,3 +2,15 @@
 @include outer-container;
 	.writing { @include span-columns(12); }
 }
+
+@media all and (max-width: 900px){
+	body{
+		font-size: 12px;
+	}
+}
+
+@media all and (max-width: 480px){
+	body{
+		font-size: 10px;
+	}
+}
