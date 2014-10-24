@@ -1,6 +1,7 @@
 .container {
 @include outer-container;
 	.writing { @include span-columns(12); }
+	 
 }
 
 @media all and (max-width: 900px){

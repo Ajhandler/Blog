@@ -179,10 +179,22 @@ article, section { font-size: 1.618em; line-height: 1.618em; margin-bottom: 2.61
 
 @media all and (max-width: 900px) { body { font-size: 12px; } }
 @media all and (max-width: 480px) { body { font-size: 10px; } }
+.blogroll-title { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-align-items: baseline; -ms-flex-align: baseline; align-items: baseline; padding: 0 1.618em; box-shadow: 0px 3px 0px 0px rgba(50, 50, 50, 0.75); }
+.blogroll-title h2 { margin: 0; }
+.blogroll-title nav ul { padding: 0; }
+.blogroll-title nav ul li { display: inline-block; list-style: none; font-size: 1.618em; padding: 1em; }
+.blogroll-title nav ul li a { text-decoration: none; color: #4c4c4c; }
+
+.blogroll { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+.blogroll ul { padding: 0; }
+.blogroll ul li { display: block; list-style-type: none; font-size: 2.617924em; padding: 0.6180469716em 0; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; text-align: center; -webkit-transition: all .4s ease-in; transition: all .4s ease-in; box-shadow: 0px 3px 0px 0px rgba(50, 50, 50, 0.75); }
+.blogroll ul li .meta { font-size: 0.3819820591em; padding: 1em 0; color: #4c4c4c; -webkit-transition: all 1s ease-in; transition: all 1s ease-in; }
+.blogroll ul a { text-decoration: none; color: #323232; -webkit-transition: all .4s ease-in; transition: all .4s ease-in; }
+
 .article-title { height: 100vh; width: 100vw; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-align-items: center; -ms-flex-align: center; align-items: center; color: #fafafa; background-image: url("../img/article-br.jpg"); background-size: cover; background-attachment: fixed; text-align: center; }
 .article-title h1 { margin: 0; }
 .article-title .meta { padding: 0; }
-.article-title .meta li { display: inline; font-style: italic; color: #c7c7c7; }
+.article-title .meta li { display: inline; font-style: italic; font-size: 1.618em; color: #c7c7c7; }
 
 .writing .half-size-img img { max-width: 50%; }
 .writing .half-size-img-with-text img { max-width: 50%; float: left; margin-right: .5em; }
